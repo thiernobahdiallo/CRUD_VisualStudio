@@ -52,20 +52,25 @@
             this.textBoxSearchModel = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.productListView = new System.Windows.Forms.ListView();
-            this.pictureBoxSpain = new System.Windows.Forms.PictureBox();
-            this.pictureBoxFrance = new System.Windows.Forms.PictureBox();
             this.radioButtonEnglish = new System.Windows.Forms.RadioButton();
             this.radioButtonFrench = new System.Windows.Forms.RadioButton();
             this.label10 = new System.Windows.Forms.Label();
             this.radioButtonAvalableProducts = new System.Windows.Forms.RadioButton();
             this.radioButtonAllProducts = new System.Windows.Forms.RadioButton();
+            this.pictureBoxSpain = new System.Windows.Forms.PictureBox();
+            this.pictureBoxFrance = new System.Windows.Forms.PictureBox();
+            this.buttonPrevPage = new System.Windows.Forms.Button();
+            this.buttonNextPage = new System.Windows.Forms.Button();
+            this.comboBoxPages = new System.Windows.Forms.ComboBox();
+            this.labelProductsFound = new System.Windows.Forms.Label();
+            this.labelOfPages = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSpain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFrance)).BeginInit();
             this.SuspendLayout();
             // 
             // ProductButton
             // 
-            this.ProductButton.Location = new System.Drawing.Point(506, 362);
+            this.ProductButton.Location = new System.Drawing.Point(560, 362);
             this.ProductButton.Name = "ProductButton";
             this.ProductButton.Size = new System.Drawing.Size(115, 34);
             this.ProductButton.TabIndex = 1;
@@ -76,16 +81,16 @@
             // comboBoxCategory
             // 
             this.comboBoxCategory.FormattingEnabled = true;
-            this.comboBoxCategory.Location = new System.Drawing.Point(41, 41);
+            this.comboBoxCategory.Location = new System.Drawing.Point(28, 41);
             this.comboBoxCategory.Name = "comboBoxCategory";
-            this.comboBoxCategory.Size = new System.Drawing.Size(88, 21);
+            this.comboBoxCategory.Size = new System.Drawing.Size(85, 21);
             this.comboBoxCategory.TabIndex = 3;
             this.comboBoxCategory.SelectedIndexChanged += new System.EventHandler(this.comboBoxCategory_SelectedIndexChanged);
             // 
             // labelCategory
             // 
             this.labelCategory.AutoSize = true;
-            this.labelCategory.Location = new System.Drawing.Point(41, 13);
+            this.labelCategory.Location = new System.Drawing.Point(25, 13);
             this.labelCategory.Name = "labelCategory";
             this.labelCategory.Size = new System.Drawing.Size(88, 13);
             this.labelCategory.TabIndex = 4;
@@ -94,7 +99,7 @@
             // labelPages
             // 
             this.labelPages.AutoSize = true;
-            this.labelPages.Location = new System.Drawing.Point(826, 27);
+            this.labelPages.Location = new System.Drawing.Point(694, 13);
             this.labelPages.Name = "labelPages";
             this.labelPages.Size = new System.Drawing.Size(75, 13);
             this.labelPages.TabIndex = 6;
@@ -103,16 +108,16 @@
             // comboBoxSubCategory
             // 
             this.comboBoxSubCategory.FormattingEnabled = true;
-            this.comboBoxSubCategory.Location = new System.Drawing.Point(158, 41);
+            this.comboBoxSubCategory.Location = new System.Drawing.Point(134, 41);
             this.comboBoxSubCategory.Name = "comboBoxSubCategory";
-            this.comboBoxSubCategory.Size = new System.Drawing.Size(104, 21);
+            this.comboBoxSubCategory.Size = new System.Drawing.Size(85, 21);
             this.comboBoxSubCategory.TabIndex = 7;
             this.comboBoxSubCategory.SelectedIndexChanged += new System.EventHandler(this.comboBoxSubCategory_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(158, 12);
+            this.label1.Location = new System.Drawing.Point(131, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 13);
             this.label1.TabIndex = 8;
@@ -121,16 +126,16 @@
             // comboBoxSize
             // 
             this.comboBoxSize.FormattingEnabled = true;
-            this.comboBoxSize.Location = new System.Drawing.Point(299, 41);
+            this.comboBoxSize.Location = new System.Drawing.Point(244, 41);
             this.comboBoxSize.Name = "comboBoxSize";
-            this.comboBoxSize.Size = new System.Drawing.Size(56, 21);
+            this.comboBoxSize.Size = new System.Drawing.Size(85, 21);
             this.comboBoxSize.TabIndex = 9;
             this.comboBoxSize.SelectedIndexChanged += new System.EventHandler(this.comboBoxSize_SelectedIndexChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(296, 12);
+            this.label2.Location = new System.Drawing.Point(241, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 13);
             this.label2.TabIndex = 10;
@@ -139,16 +144,16 @@
             // comboBoxProductLine
             // 
             this.comboBoxProductLine.FormattingEnabled = true;
-            this.comboBoxProductLine.Location = new System.Drawing.Point(394, 41);
+            this.comboBoxProductLine.Location = new System.Drawing.Point(347, 41);
             this.comboBoxProductLine.Name = "comboBoxProductLine";
-            this.comboBoxProductLine.Size = new System.Drawing.Size(48, 21);
+            this.comboBoxProductLine.Size = new System.Drawing.Size(85, 21);
             this.comboBoxProductLine.TabIndex = 11;
             this.comboBoxProductLine.SelectedIndexChanged += new System.EventHandler(this.comboBoxProductLine_SelectedIndexChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(391, 12);
+            this.label3.Location = new System.Drawing.Point(344, 12);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(106, 13);
             this.label3.TabIndex = 12;
@@ -157,16 +162,16 @@
             // comboBoxClass
             // 
             this.comboBoxClass.FormattingEnabled = true;
-            this.comboBoxClass.Location = new System.Drawing.Point(503, 41);
+            this.comboBoxClass.Location = new System.Drawing.Point(461, 41);
             this.comboBoxClass.Name = "comboBoxClass";
-            this.comboBoxClass.Size = new System.Drawing.Size(43, 21);
+            this.comboBoxClass.Size = new System.Drawing.Size(85, 21);
             this.comboBoxClass.TabIndex = 13;
             this.comboBoxClass.SelectedIndexChanged += new System.EventHandler(this.comboBoxClass_SelectedIndexChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(503, 13);
+            this.label4.Location = new System.Drawing.Point(458, 13);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 13);
             this.label4.TabIndex = 14;
@@ -175,7 +180,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(606, 13);
+            this.label5.Location = new System.Drawing.Point(567, 13);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 13);
             this.label5.TabIndex = 15;
@@ -184,16 +189,16 @@
             // comboBoxStyle
             // 
             this.comboBoxStyle.FormattingEnabled = true;
-            this.comboBoxStyle.Location = new System.Drawing.Point(609, 41);
+            this.comboBoxStyle.Location = new System.Drawing.Point(570, 41);
             this.comboBoxStyle.Name = "comboBoxStyle";
-            this.comboBoxStyle.Size = new System.Drawing.Size(66, 21);
+            this.comboBoxStyle.Size = new System.Drawing.Size(85, 21);
             this.comboBoxStyle.TabIndex = 16;
             this.comboBoxStyle.SelectedIndexChanged += new System.EventHandler(this.comboBoxStyle_SelectedIndexChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(710, 13);
+            this.label6.Location = new System.Drawing.Point(704, 100);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(87, 13);
             this.label6.TabIndex = 17;
@@ -201,15 +206,15 @@
             // 
             // textBoxPriceMinim
             // 
-            this.textBoxPriceMinim.Location = new System.Drawing.Point(714, 41);
+            this.textBoxPriceMinim.Location = new System.Drawing.Point(707, 127);
             this.textBoxPriceMinim.Name = "textBoxPriceMinim";
-            this.textBoxPriceMinim.Size = new System.Drawing.Size(84, 20);
+            this.textBoxPriceMinim.Size = new System.Drawing.Size(93, 20);
             this.textBoxPriceMinim.TabIndex = 19;
             this.textBoxPriceMinim.TextChanged += new System.EventHandler(this.textBoxPriceMinim_TextChanged);
             // 
             // textBoxPriceMax
             // 
-            this.textBoxPriceMax.Location = new System.Drawing.Point(714, 80);
+            this.textBoxPriceMax.Location = new System.Drawing.Point(707, 190);
             this.textBoxPriceMax.Name = "textBoxPriceMax";
             this.textBoxPriceMax.Size = new System.Drawing.Size(93, 20);
             this.textBoxPriceMax.TabIndex = 20;
@@ -218,7 +223,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(711, 64);
+            this.label7.Location = new System.Drawing.Point(704, 160);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(96, 13);
             this.label7.TabIndex = 21;
@@ -227,7 +232,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(711, 114);
+            this.label8.Location = new System.Drawing.Point(704, 233);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(126, 13);
             this.label8.TabIndex = 22;
@@ -236,7 +241,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(711, 167);
+            this.label9.Location = new System.Drawing.Point(704, 298);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(127, 13);
             this.label9.TabIndex = 23;
@@ -244,23 +249,23 @@
             // 
             // textBoxSearchName
             // 
-            this.textBoxSearchName.Location = new System.Drawing.Point(713, 130);
+            this.textBoxSearchName.Location = new System.Drawing.Point(707, 262);
             this.textBoxSearchName.Name = "textBoxSearchName";
-            this.textBoxSearchName.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSearchName.Size = new System.Drawing.Size(93, 20);
             this.textBoxSearchName.TabIndex = 24;
             this.textBoxSearchName.TextChanged += new System.EventHandler(this.textBoxSearchName_TextChanged);
             // 
             // textBoxSearchModel
             // 
-            this.textBoxSearchModel.Location = new System.Drawing.Point(714, 193);
+            this.textBoxSearchModel.Location = new System.Drawing.Point(707, 325);
             this.textBoxSearchModel.Name = "textBoxSearchModel";
-            this.textBoxSearchModel.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSearchModel.Size = new System.Drawing.Size(93, 20);
             this.textBoxSearchModel.TabIndex = 25;
             this.textBoxSearchModel.TextChanged += new System.EventHandler(this.textBoxSearchModel_TextChanged);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(336, 362);
+            this.button2.Location = new System.Drawing.Point(697, 362);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(140, 34);
             this.button2.TabIndex = 27;
@@ -271,37 +276,17 @@
             // productListView
             // 
             this.productListView.HideSelection = false;
-            this.productListView.Location = new System.Drawing.Point(35, 80);
+            this.productListView.Location = new System.Drawing.Point(35, 91);
             this.productListView.Name = "productListView";
             this.productListView.Size = new System.Drawing.Size(658, 265);
             this.productListView.TabIndex = 28;
             this.productListView.UseCompatibleStateImageBehavior = false;
             this.productListView.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.productListView_MouseDoubleClick);
             // 
-            // pictureBoxSpain
-            // 
-            this.pictureBoxSpain.Image = global::DI01.Properties.Resources.english;
-            this.pictureBoxSpain.Location = new System.Drawing.Point(714, 287);
-            this.pictureBoxSpain.Name = "pictureBoxSpain";
-            this.pictureBoxSpain.Size = new System.Drawing.Size(51, 35);
-            this.pictureBoxSpain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxSpain.TabIndex = 30;
-            this.pictureBoxSpain.TabStop = false;
-            // 
-            // pictureBoxFrance
-            // 
-            this.pictureBoxFrance.Image = global::DI01.Properties.Resources.france;
-            this.pictureBoxFrance.Location = new System.Drawing.Point(786, 287);
-            this.pictureBoxFrance.Name = "pictureBoxFrance";
-            this.pictureBoxFrance.Size = new System.Drawing.Size(51, 35);
-            this.pictureBoxFrance.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxFrance.TabIndex = 29;
-            this.pictureBoxFrance.TabStop = false;
-            // 
             // radioButtonEnglish
             // 
             this.radioButtonEnglish.AutoSize = true;
-            this.radioButtonEnglish.Location = new System.Drawing.Point(734, 268);
+            this.radioButtonEnglish.Location = new System.Drawing.Point(189, 381);
             this.radioButtonEnglish.Name = "radioButtonEnglish";
             this.radioButtonEnglish.Size = new System.Drawing.Size(14, 13);
             this.radioButtonEnglish.TabIndex = 31;
@@ -312,7 +297,7 @@
             // radioButtonFrench
             // 
             this.radioButtonFrench.AutoSize = true;
-            this.radioButtonFrench.Location = new System.Drawing.Point(800, 268);
+            this.radioButtonFrench.Location = new System.Drawing.Point(259, 380);
             this.radioButtonFrench.Name = "radioButtonFrench";
             this.radioButtonFrench.Size = new System.Drawing.Size(14, 13);
             this.radioButtonFrench.TabIndex = 32;
@@ -323,7 +308,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(713, 240);
+            this.label10.Location = new System.Drawing.Point(171, 364);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(84, 13);
             this.label10.TabIndex = 33;
@@ -332,7 +317,7 @@
             // radioButtonAvalableProducts
             // 
             this.radioButtonAvalableProducts.AutoSize = true;
-            this.radioButtonAvalableProducts.Location = new System.Drawing.Point(158, 362);
+            this.radioButtonAvalableProducts.Location = new System.Drawing.Point(35, 385);
             this.radioButtonAvalableProducts.Name = "radioButtonAvalableProducts";
             this.radioButtonAvalableProducts.Size = new System.Drawing.Size(113, 17);
             this.radioButtonAvalableProducts.TabIndex = 34;
@@ -344,7 +329,7 @@
             // radioButtonAllProducts
             // 
             this.radioButtonAllProducts.AutoSize = true;
-            this.radioButtonAllProducts.Location = new System.Drawing.Point(59, 362);
+            this.radioButtonAllProducts.Location = new System.Drawing.Point(35, 362);
             this.radioButtonAllProducts.Name = "radioButtonAllProducts";
             this.radioButtonAllProducts.Size = new System.Drawing.Size(81, 17);
             this.radioButtonAllProducts.TabIndex = 35;
@@ -353,11 +338,83 @@
             this.radioButtonAllProducts.UseVisualStyleBackColor = true;
             this.radioButtonAllProducts.CheckedChanged += new System.EventHandler(this.radioButtonAllProducts_CheckedChanged);
             // 
+            // pictureBoxSpain
+            // 
+            this.pictureBoxSpain.Image = global::DI01.Properties.Resources.english;
+            this.pictureBoxSpain.Location = new System.Drawing.Point(174, 400);
+            this.pictureBoxSpain.Name = "pictureBoxSpain";
+            this.pictureBoxSpain.Size = new System.Drawing.Size(44, 32);
+            this.pictureBoxSpain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxSpain.TabIndex = 30;
+            this.pictureBoxSpain.TabStop = false;
+            // 
+            // pictureBoxFrance
+            // 
+            this.pictureBoxFrance.Image = global::DI01.Properties.Resources.france;
+            this.pictureBoxFrance.Location = new System.Drawing.Point(244, 400);
+            this.pictureBoxFrance.Name = "pictureBoxFrance";
+            this.pictureBoxFrance.Size = new System.Drawing.Size(44, 32);
+            this.pictureBoxFrance.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxFrance.TabIndex = 29;
+            this.pictureBoxFrance.TabStop = false;
+            // 
+            // buttonPrevPage
+            // 
+            this.buttonPrevPage.Location = new System.Drawing.Point(329, 362);
+            this.buttonPrevPage.Name = "buttonPrevPage";
+            this.buttonPrevPage.Size = new System.Drawing.Size(75, 23);
+            this.buttonPrevPage.TabIndex = 36;
+            this.buttonPrevPage.Text = "<Prev";
+            this.buttonPrevPage.UseVisualStyleBackColor = true;
+            this.buttonPrevPage.Click += new System.EventHandler(this.buttonPrevPage_Click);
+            // 
+            // buttonNextPage
+            // 
+            this.buttonNextPage.Location = new System.Drawing.Point(422, 362);
+            this.buttonNextPage.Name = "buttonNextPage";
+            this.buttonNextPage.Size = new System.Drawing.Size(75, 23);
+            this.buttonNextPage.TabIndex = 37;
+            this.buttonNextPage.Text = "Next>";
+            this.buttonNextPage.UseVisualStyleBackColor = true;
+            this.buttonNextPage.Click += new System.EventHandler(this.buttonNextPage_Click);
+            // 
+            // comboBoxPages
+            // 
+            this.comboBoxPages.FormattingEnabled = true;
+            this.comboBoxPages.Location = new System.Drawing.Point(697, 40);
+            this.comboBoxPages.Name = "comboBoxPages";
+            this.comboBoxPages.Size = new System.Drawing.Size(85, 21);
+            this.comboBoxPages.TabIndex = 38;
+            this.comboBoxPages.SelectedIndexChanged += new System.EventHandler(this.comboBoxPages_SelectedIndexChanged);
+            // 
+            // labelProductsFound
+            // 
+            this.labelProductsFound.AutoSize = true;
+            this.labelProductsFound.Location = new System.Drawing.Point(244, 69);
+            this.labelProductsFound.Name = "labelProductsFound";
+            this.labelProductsFound.Size = new System.Drawing.Size(57, 13);
+            this.labelProductsFound.TabIndex = 39;
+            this.labelProductsFound.Text = "films found";
+            // 
+            // labelOfPages
+            // 
+            this.labelOfPages.AutoSize = true;
+            this.labelOfPages.Location = new System.Drawing.Point(397, 68);
+            this.labelOfPages.Name = "labelOfPages";
+            this.labelOfPages.Size = new System.Drawing.Size(71, 13);
+            this.labelOfPages.TabIndex = 40;
+            this.labelOfPages.Text = "X of Y pages ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(959, 450);
+            this.Controls.Add(this.labelOfPages);
+            this.Controls.Add(this.labelProductsFound);
+            this.Controls.Add(this.comboBoxPages);
+            this.Controls.Add(this.buttonNextPage);
+            this.Controls.Add(this.buttonPrevPage);
             this.Controls.Add(this.radioButtonAllProducts);
             this.Controls.Add(this.radioButtonAvalableProducts);
             this.Controls.Add(this.label10);
@@ -431,6 +488,11 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.RadioButton radioButtonAvalableProducts;
         private System.Windows.Forms.RadioButton radioButtonAllProducts;
+        private System.Windows.Forms.Button buttonPrevPage;
+        private System.Windows.Forms.Button buttonNextPage;
+        private System.Windows.Forms.ComboBox comboBoxPages;
+        private System.Windows.Forms.Label labelProductsFound;
+        private System.Windows.Forms.Label labelOfPages;
     }
 }
 
