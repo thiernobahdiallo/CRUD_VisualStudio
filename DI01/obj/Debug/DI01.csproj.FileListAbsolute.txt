@@ -1,0 +1,15 @@
+C:\Users\HolDulkar\source\repos\UiAplicationWithAzure\DI01\bin\Debug\DI01.exe.config
+C:\Users\HolDulkar\source\repos\UiAplicationWithAzure\DI01\bin\Debug\DI01.exe
+C:\Users\HolDulkar\source\repos\UiAplicationWithAzure\DI01\bin\Debug\DI01.pdb
+C:\Users\HolDulkar\source\repos\UiAplicationWithAzure\DI01\bin\Debug\Dapper.dll
+C:\Users\HolDulkar\source\repos\UiAplicationWithAzure\DI01\bin\Debug\Dapper.xml
+C:\Users\HolDulkar\source\repos\UiAplicationWithAzure\DI01\obj\Debug\DI01.csprojAssemblyReference.cache
+C:\Users\HolDulkar\source\repos\UiAplicationWithAzure\DI01\obj\Debug\DI01.Form1.resources
+C:\Users\HolDulkar\source\repos\UiAplicationWithAzure\DI01\obj\Debug\DI01.Properties.Resources.resources
+C:\Users\HolDulkar\source\repos\UiAplicationWithAzure\DI01\obj\Debug\DI01.csproj.GenerateResource.cache
+C:\Users\HolDulkar\source\repos\UiAplicationWithAzure\DI01\obj\Debug\DI01.csproj.CoreCompileInputs.cache
+C:\Users\HolDulkar\source\repos\UiAplicationWithAzure\DI01\obj\Debug\DI01.csproj.CopyComplete
+C:\Users\HolDulkar\source\repos\UiAplicationWithAzure\DI01\obj\Debug\DI01.exe
+C:\Users\HolDulkar\source\repos\UiAplicationWithAzure\DI01\obj\Debug\DI01.pdb
+C:\Users\HolDulkar\source\repos\UiAplicationWithAzure\DI01\obj\Debug\DI01.FormDetails.resources
+C:\Users\HolDulkar\source\repos\UiAplicationWithAzure\DI01\obj\Debug\DI01.Exceptions.resources
